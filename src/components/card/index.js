@@ -21,19 +21,19 @@ export default function Card({ data, onApply }) {
                         <div className="text-lg font-semibold">
                             {jobTitle}
                         </div>
-                        <p className='text-base'>{companyName} - {industry}</p>
-                        <p className='text-base'>{location} ({remoteType})</p>
+                        <p className='text-base font-medium'>{companyName} - {industry}</p>
+                        <p className='text-base opacity-70'>{location} ({remoteType})</p>
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-6 text-sm'>
                         Part Time (9.00 am - 5.00 pm IST)
                     </div>
-                    <div className='mt-2'>
+                    <div className='mt-2 text-sm'>
                         Experience ({experienceMin}-{experienceMax} Year)
                     </div>
-                    <div className='mt-2'>
+                    <div className='mt-2 text-sm'>
                         INR (₹) ${currencyFormat(salaryMin)} - ${currencyFormat(salaryMax)} / Month
                     </div>
-                    <div className='mb-6 mt-2'>
+                    <div className='mb-6 mt-2 text-sm'>
                         {totalEmployees} Employees
                     </div>
                     <div>
